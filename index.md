@@ -1,37 +1,14 @@
-## Welcome to GitHub Pages
+# Welcome to the Web version of A Galactic HRT
 
-You can use the [editor on GitHub](https://github.com/coco33920/agh-public/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## PDFs
+You can here download the up-to-date PDFs (A4-double page optimize or not) and see the HTML versions
+The PDFs are available [here](https://coco33920.github.io/agh-public/pdfs/).
+The main PDF is available [here](https://coco33920.github.io/agh-public/pdfs/agh.pdf)
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/coco33920/agh-public/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## Web HTML Version 
+### English
+The up-to-date with the [Scribble Hub](https://www.scribblehub.com/series/444395/a-galactic-hrt/) 
+is available [here](https://coco33920.github.io/agh-public/web/agh.html)
+### French
+Lastly the french version is available [here](https://coco33920.github.io/agh-public/web/agh-french.html)
