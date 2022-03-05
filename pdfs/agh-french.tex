@@ -3,6 +3,9 @@
 \usepackage[utf8]{inputenc}
 \usepackage[]{geometry}
 \usepackage{textcomp}
+\usepackage{lastpage}
+\usepackage{scrlayer-scrpage}
+\usepackage{blindtext}
 \usepackage{hyperref}
 \usepackage{glossaries}
 \usepackage[french]{babel}
@@ -10,6 +13,11 @@
    \providecommand{\og}{\leavevmode\flqq~}
    \providecommand{\fg}{\ifdim\lastskip>\z@\unskip\fi~\frqq}
 }
+\clearpairofpagestyles
+\usepackage{calc}
+\newcommand\footy{\parbox{\textwidth}{\hrulefill\kern-0.6ex\raisebox{-0.5ex}{$\Bigl[$\makebox[\widthof{1.2{\thepage\text{ sur }\pageref{LastPage}}}][c]{\thepage{}\text{ sur }\pageref{LastPage}}$\Bigr]$}\kern-0.5ex\hrulefill}}
+\cfoot[\footy]{\footy}
+
 
 \geometry{margin=1.8cm,head=14.5pt}
 
@@ -693,15 +701,6 @@ Il lança la séquence de téléportation et se prépara mentallement pour une d
 \sep
 
 \textit{\textbf{PdV d'Ariana}}
-
-When light came back I was sitting in a bench with a comfortable cushion on it and I saw Sylvia stirring 
-beside me so I started to explore the surrounding and we were not in Sylvia's home anymore. 
-I started to hyperventilate when I felt Sylvia's hug and relief washing over me, at least they was there for me so 
-I wasn't alone.\par
-\bigskip
-
-We saw a human figure a few meters away from us and before we could react he spoke in a foreign accent I could not place.\par
-\bigskip
 
 Quand la lumière revint j'étais assise sur un banc avec un coussin comfortable dessus, je vis Sylvia se reveiller 
 à côté de moi donc je commença à explorer les environnant. Nous n'étions plus dans la maison de Sylvia.
