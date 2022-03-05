@@ -9,6 +9,6 @@ The main PDF is available [here](https://coco33920.github.io/agh-public/pdfs/agh
 ## Web HTML Version 
 ### English
 The up-to-date with the [Scribble Hub](https://www.scribblehub.com/series/444395/a-galactic-hrt/) 
-is available [here](https://coco33920.github.io/agh-public/web/agh.html)
+is available [here](https://coco33920.github.io/agh-public/web/index.html)
 ### French
 Lastly the french version is available [here](https://coco33920.github.io/agh-public/web/agh-french.html)
