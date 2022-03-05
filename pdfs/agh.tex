@@ -13,8 +13,7 @@
 \setlength{\footheight}{18.00017pt}
 
 \usepackage{calc}
-\newcommand\footy{\parbox{\textwidth}{\hrulefill\kern-0.6ex\raisebox{-0.5ex}{$\Bigl[$\makebox[\widthof{1.2{\thepage\,
-of \pageref{LastPage}}}][c]{\thepage\, of \pageref{LastPage}}$\Bigr]$}\kern-0.5ex\hrulefill}}
+\newcommand\footy{\parbox{\textwidth}{\hrulefill\kern-0.6ex\raisebox{-0.5ex}{$\Bigl[$\makebox[\widthof{1.2{\thepage\text{ of }\pageref{LastPage}}}][c]{\thepage\text{ of }\pageref{LastPage}}$\Bigr]$}\kern-0.5ex\hrulefill}}
 \cfoot[\footy]{\footy}
 
 \geometry{margin=1.8cm,head=14.5pt}
