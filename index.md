@@ -64,3 +64,28 @@ And you can mix and match
 ./generate-web.py --which file --chapter number
 ```
 to build a certain chapter from a file
+
+## Example of the code
+The code is easy, here is, for example, the code of the parsing of an individual chapter in HTML
+```python
+def parse_chapter(chapter: str):
+    """
+    parse a given chapter into its name, and its text.
+    """
+    chapters = {}
+    a = chapter.splitlines()
+    first_line = a[0]
+    name = first_line.replace("{","").replace("}","").replace("*","").strip()
+    text = ("<p>\n\t" + "".join(a[1:])).strip()
+    text_with_line = text.replace("\\newline", "<br/>\n").replace("\\par","<br/>\n").replace("\\bigskip", "</p>\n\n<p>\n\t").strip()
+    text_sep = text_with_line.replace("\\sep", "<br/><div class=\"center\">\n<p>\n<br/><b>***</b><br/>\n</p>\n</div>").strip()
+
+    text = text_sep.strip()
+    text = parse_text_in_italic_and_bold_reloaded(list(text))
+    chapters["name"] = name.strip()
+    chapters["text"] = "<div>\n\t" + text + "\n</div><br/>\n"
+    return chapters
+```
+
+The function `parse_text_in_italic_and_bold_reloaded` take the list of chars of the string on argument and 
+parse all the `\textit` `\textbf` and `\gls` statements (it searches the glossary entry in the TeX file)
