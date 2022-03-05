@@ -2,7 +2,6 @@
 #A script to prepare the tex file for publication
 import argparse
 import os
-
 parser = argparse.ArgumentParser(description='Python script to transform the tex file into an html file')
 parser.add_argument('--which', type=str,
                     help='The file to transform (french/current/normal) normal is default')

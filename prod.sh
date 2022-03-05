@@ -1,4 +1,5 @@
 #!/usr/bin/bash
+echo $1
 rm pdfs/*
 rm web/*
 rm generate-web.py
@@ -12,5 +13,5 @@ cp ../web/agh-current.html web/index.html
 cp ../web/agh-french.html web/agh-french.html
 cp ../generate-web.py generate-web.py
 git add .
-git commit -S -m "update"
+git commit -S -m "$1"
 git push origin gh-pages
