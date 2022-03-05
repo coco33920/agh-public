@@ -6,27 +6,27 @@ I recommend you to read the PDFs the HTML versions are mostly for copying the te
 
 # PDFs
 You can here download the up-to-date PDFs (A4-double page optimize or not) and see the HTML versions
-The PDFs are available on the repository [here](https://github.com/coco33920/agh-public/pdfs/).
+The PDFs are available on the repository [REPO](https://github.com/coco33920/agh-public/pdfs/).
 You can access them on this website with the following links
 
 ## English
-Main Up-To-Date with SH PDF is [here](https://coco33920.github.io/agh-public/pdfs/agh.pdf)
-Main Up-To-Date with SH PDF, optimized for double page book is [here](https://coco33920.github.io/agh-public/pdfs/agh-a4.pdf)
+* Main Up-To-Date with SH [PDF](https://coco33920.github.io/agh-public/pdfs/agh.pdf)
+* Main Up-To-Date with SH optimized for double page book, [PDF](https://coco33920.github.io/agh-public/pdfs/agh-a4.pdf)
 
 ## French
-Translated PDF (not up to date) is [here](https://coco33920.github.io/agh-public/pdfs/agh.pdf)
-Translated PDF (not up to date), optimized for double page book is [here](https://coco33920.github.io/agh-public/pdfs/agh-a4.pdf)
+* Translated (not up to date) [PDF](https://coco33920.github.io/agh-public/pdfs/agh.pdf)
+* Translated (not up to date) optimized for double page book is [PDF](https://coco33920.github.io/agh-public/pdfs/agh-a4.pdf)
 
 # TeX
 You can download / see the TeX files on the repository or here.
 
 ## English
-Main Up-To-Date with SH TeX is [here](https://coco33920.github.io/agh-public/pdfs/agh.tex)
-Main Up-To-Date with SH TeX, on the repository [here](https://github.com/coco33920/agh-public/pdfs/agh.tex)
+* Main Up-To-Date with SH [TeX](https://coco33920.github.io/agh-public/pdfs/agh.tex)
+* Main Up-To-Date with SH, on the repository [TeX](https://github.com/coco33920/agh-public/pdfs/agh.tex)
 
 ## French
-Translated TeX (not up to date) is [here](https://coco33920.github.io/agh-public/pdfs/agh-french.tex)
-Translated TeX (not up to date), on the repository [here](https://github.com/coco33920/agh-public/pdfs/agh-french.tex)
+* Translated (not up to date) [TeX](https://coco33920.github.io/agh-public/pdfs/agh-french.tex)
+* Translated (not up to date), on the repository [TeX](https://github.com/coco33920/agh-public/pdfs/agh-french.tex)
 
 # Web HTML Version 
 This website primarily host the HTML versions of AGH
