@@ -95,6 +95,18 @@ class TeXParser:
         if name not in self.parsed_glossary.keys():
             return i,"error"
         return name,i,self.parsed_glossary[name]
+    
+    def parse_url(self,text,startingpoint):
+        i = startingpoint
+        url = ""
+        while i <= len(text):
+            char = text[i]
+            if char=="}":
+                break
+            else:
+                url += char
+            i+=1
+        return i,"<a href=\""+url+"\"><span>"+url+"</span></a>"
         
     def parse_text_in_italic_and_bold_reloaded(self,text):
         i = 0
@@ -123,6 +135,12 @@ class TeXParser:
                     i = s
                 else:
                     result += word
+            elif word=="{" and last_char=="l":
+                s,url = self.parse_url(text, i+1)
+                result += url
+                i = s
+            #nous avons affaire à url
+
             elif word=="}":
                 if in_italic==True and in_bold==False:
                     last_opened.pop()
@@ -146,7 +164,7 @@ class TeXParser:
                 result += word
             last_char = word
             i += 1
-        return result.replace("\\textit","").replace("\\textbf","").replace("\\gls", "")
+        return result.replace("\\textit","").replace("\\textbf","").replace("\\gls", "").replace("\\url","")
     
     def print_glossary(self):
         if not self.use_glossary:
