@@ -1,91 +1,52 @@
-# Welcome to the Web version of A Galactic HRT
+# Welcome to the Website Repository of my public stories
 ## Introduction
-Welcome to the web page of a A Galactic HRT, please go see the [Scribble Hub](https://www.scribblehub.com/series/444395/a-galactic-hrt/) page of AGH if you wants the authors note. 
+You can here find the pdfs of all my public stories up-to-date with the ScribbleHub publication!
+If you prefer webnovels presentation here is the [AGH](https://www.scribblehub.com/series/444395/a-galactic-hrt/) 
+SH page and here is the [AWB](https://www.scribblehub.com/series/427680/a-witchy-best-friend/) page.
+NB
+* AGH = A Galactic HRT
+* AWB = A Witchy Best Friend
 
-I recommend you to read the PDFs the HTML versions are mostly for copying the tex on SH.
+## Status 
+* AGH : Ongoing, last chapter: Chapter 3 - We Need To Talk. A chapter every Tuesday 1600h CET
+* AWB : Completed, last chapter: A Witchy Lover
 
-# PDFs
+## PDFs
+
+### AGH
+You can download here the up-to-date PDFs (A4-double page optimize or not) and see the HTML versions
+The PDFs are available on the repository [REPO](https://github.com/coco33920/agh-public/pdfs/).
+You can access them on this website with the following links
+* Main Up-To-Date with SH (EN) [PDF](pdfs/agh.pdf)
+* Main Up-To-Date with SH optimized for double page book, (EN) [PDF](pdfs/agh-a4.pdf)
+* Translated (not up to date) (FR) [PDF](pdfs/agh-french.pdf)
+* Translated (not up to date) (FR) optimized for double page book is [PDF](pdfs/agh-french-a4.pdf)
+
+
+
+### AWB
 You can here download the up-to-date PDFs (A4-double page optimize or not) and see the HTML versions
 The PDFs are available on the repository [REPO](https://github.com/coco33920/agh-public/pdfs/).
 You can access them on this website with the following links
+* Completed (EN) [PDF](pdfs/awb.pdf)
+* Completed, optimized for double page book, (EN) [PDF](pdfs/awb-a4.pdf)
 
-## English
-* Main Up-To-Date with SH [PDF](https://coco33920.github.io/agh-public/pdfs/agh.pdf)
-* Main Up-To-Date with SH optimized for double page book, [PDF](https://coco33920.github.io/agh-public/pdfs/agh-a4.pdf)
 
-## French
-* Translated (not up to date) [PDF](https://coco33920.github.io/agh-public/pdfs/agh.pdf)
-* Translated (not up to date) optimized for double page book is [PDF](https://coco33920.github.io/agh-public/pdfs/agh-a4.pdf)
+### All
+A zip file with all the pdfs and tex file is available to download [here](pdfs/all-stories.zip)
 
-# TeX
-You can download / see the TeX files on the repository or here.
+## TeX
+* AGH TeX File [TeX](pdfs/agh.tex)
+* AGH FR TeX File [TeX](pdfs/agh-french.tex)
+* AWB TeX File [TeX](pdfs/awb.tex)
 
-## English
-* Main Up-To-Date with SH [TeX](https://coco33920.github.io/agh-public/pdfs/agh.tex)
-* Main Up-To-Date with SH, on the repository [TeX](https://github.com/coco33920/agh-public/pdfs/agh.tex)
+## HTML
+This website primary usage is to access to the HTML version of the stories
+* AGH HTML Version [HTML](web/agh/index.html)
+* AGH French HTML Version [HTML](web/agh/agh-french.html)
+* AWB HTML Version [HTML](web/awb/index.html)
 
-## French
-* Translated (not up to date) [TeX](https://coco33920.github.io/agh-public/pdfs/agh-french.tex)
-* Translated (not up to date), on the repository [TeX](https://github.com/coco33920/agh-public/pdfs/agh-french.tex)
 
-# Web HTML Version 
-This website primarily host the HTML versions of AGH
-
-## English
-The up-to-date with the [Scribble Hub](https://www.scribblehub.com/series/444395/a-galactic-hrt/) 
-is available [here](https://coco33920.github.io/agh-public/web/index.html)
-
-## French
-Lastly the french version is available [here](https://coco33920.github.io/agh-public/web/agh-french.html)
-
-# TeX to HTML Translation
-The HTML files are directly generated from the TeX file via a little script of my own, you can download and see it on the 
-repository [here](https://github.com/coco33920/agh-public/generate-web.py) the usage is simple just 
-put the python file on the same place as the `agh.tex` file and use it like that 
-
-## Usage
-You need to create a `web` folder as I did not created the
-```bash
-./generate-web.py 
-```
-
-If you have the french version under a directory named french you can also build it with 
-```bash
-./generate-web.py --which french
-```
-
-You can build a certain chapter with (the chapter 0 is the prologue so the numbering follows the PDF)
-```bash
-./generate-web.py --chapter number
-```
-
-And you can mix and match
-```bash
-./generate-web.py --which file --chapter number
-```
-to build a certain chapter from a file
-
-## Example of the code
-The code is easy, here is, for example, the code of the parsing of an individual chapter in HTML
-```python
-def parse_chapter(chapter: str):
-    """
-    parse a given chapter into its name, and its text.
-    """
-    chapters = {}
-    a = chapter.splitlines()
-    first_line = a[0]
-    name = first_line.replace("{","").replace("}","").replace("*","").strip()
-    text = ("<p>\n\t" + "".join(a[1:])).strip()
-    text_with_line = text.replace("\\newline", "<br/>\n").replace("\\par","<br/>\n").replace("\\bigskip", "</p>\n\n<p>\n\t").strip()
-    text_sep = text_with_line.replace("\\sep", "<br/><div class=\"center\">\n<p>\n<br/><b>***</b><br/>\n</p>\n</div>").strip()
-
-    text = text_sep.strip()
-    text = parse_text_in_italic_and_bold_reloaded(list(text))
-    chapters["name"] = name.strip()
-    chapters["text"] = "<div>\n\t" + text + "\n</div><br/>\n"
-    return chapters
-```
-
-The function `parse_text_in_italic_and_bold_reloaded` take the list of chars of the string on argument and 
-parse all the `\textit` `\textbf` and `\gls` statements (it searches the glossary entry in the TeX file)
+## TeX to HTML
+A full explanation of the script translating TeX to HTML for 
+public deployment is available in this page, [PAGE](tex.md)
