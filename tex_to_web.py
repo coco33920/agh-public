@@ -4,9 +4,10 @@ import argparse
 import os
 
 class TeXParser:
-    def __init__(self,filename,glossaryname,outname,name,use_glossary=True):
+    def __init__(self,filename,glossaryname,outname,name,use_glossary=True,starting_chapter=1):
         self.filename = filename
         self.glossaryname = glossaryname
+        self.starting_chapter = starting_chapter
         self.outname = outname
         self.use_glossary = use_glossary
         self.parsed_glossary = None
@@ -22,7 +23,7 @@ class TeXParser:
         lines = file.read()
         file.close()
         chappy = lines.split("\chapter")
-        return chappy[1:]
+        return chappy[self.starting_chapter:]
 
     def read_glossary(self):
         file = open(self.glossaryname, 'r')
@@ -229,14 +230,16 @@ parser.add_argument('--output', type=str, help="Manually input the file to trans
 parser.add_argument('--use-glossary', type=str, help="Specify if there is a glossary attached")
 parser.add_argument('--chapter', type=int, help='Prints only the supplied chapter without the glossary')
 parser.add_argument('--name',type=str,help="Specify the name in the <title> and <h1> balise, TeX by default", default="TeX")
+parser.add_argument('--start-chapter', type=int, help="Specify which chapter to start with, default 1", default=1)
 args = parser.parse_args()
 chapter = args.chapter
 input_file = args.input
 glossary = args.use_glossary
 output = args.output
 name = args.name
+starting_chapter = args.start_chapter
 use_glossary = not(glossary is None)
-tex = TeXParser(input_file,glossary,output,name,use_glossary)
+tex = TeXParser(input_file,glossary,output,name,use_glossary=use_glossary,starting_chapter=starting_chapter)
 
 if not (chapter is None):
     tex.write_chapter(chapter)
