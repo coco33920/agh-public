@@ -40,6 +40,20 @@ example
 ./tex_to_web.py --input agh.tex --use-glossary glossary.tex --chapter 2 --output chap2.html
 ```
 
+### Starting point
+You can change at which chapter the HTML parsing starts with the `--start-chapter <chapter>` (default: 1) option 
+for example for AGH this option is `2` because I don't want the Edito to be parsed. 0 is before the first chapter,
+1 is the edito and 2 is the prologue, which i want.
+```bash
+./text_to_web --input agh.tex --output agh.html --start-chapter 2
+```
+
+### AGH
+The full command line compilation for agh/agh-current/agh-french is
+```bash
+./tex_to_web.py --input agh.tex --output web/agh.html --use-glossary glossary.tex --name "A Galactic HRT" --start-chapter 2
+```
+
 ## Use the code
 You can use the `tex_to_web.py` file to do whatever you want, the entry point is the class `TeXParser`
 example
