@@ -22,7 +22,7 @@ class TeXParser:
         lines = file.read()
         file.close()
         chappy = lines.split("\chapter")
-        return chappy[2:]
+        return chappy[1:]
 
     def read_glossary(self):
         file = open(self.glossaryname, 'r')
@@ -44,7 +44,7 @@ class TeXParser:
         a = self.parsed_chapters[i]
         line = "<title>"+self.name+": HTML Version</title>\n<body>\n"
         line += "<style>\n .center { \n margin:auto; \n text-align: center; \n } \n </style>"
-        line += "<h1 id=\"title\" class=\"center\">" + "TeX : HTML Version" + "</h1>\n\n"
+        line += "<h1 id=\"title\" class=\"center\">" + self.name + ": HTML Version" + "</h1>\n\n"
         line += "<h2>" + a["name"] + "</h2>\n\n"
         total_text = line + a["text"] + "</body>"
         file = open(self.outname, "w")
@@ -57,7 +57,7 @@ class TeXParser:
             self.parsed_chapters = [self.parse_chapter(a) for a in self.chappies]
         line = "<title>"+self.name+": HTML Version</title>\n<body>\n"
         line += "<style>\n .center { \n margin:auto; \n text-align: center; \n } \n </style>"
-        line += "<h1 id=\"title\" class=\"center\">" + "A Galactic HRT : HTML Version" + "</h1>\n\n"
+        line += "<h1 id=\"title\" class=\"center\">" + self.name + ": HTML Version" + "</h1>\n\n"
         i = 0
         line += "<div id=\"tableofcontent\" class=\"center\"><br/>\n"
         line += "\t<h2>Table of content</h2><br/>\n"
@@ -76,7 +76,7 @@ class TeXParser:
         file = open(self.outname, "w")
         file.write(line)
         file.close()
-        print("html has been printed in the file",self.outname)
+        print(name,"html has been printed in the file",self.outname)
 
     def parse_gls(self,text,startingpoint):
         if not self.use_glossary:
@@ -159,7 +159,7 @@ class TeXParser:
             name,desc = self.parsed_glossary[key]
             line += "\t<div id=\"" + key + "\">\n\t\t<h3>" + name + "</h3>\n\t\t<p>" + desc + "</p>\n\t</div>\n"
         line += "</div>\n"
-        line = line.replace("%End after the epilogue, the glossary\printglossaries\end{document}", "")
+        line = line.replace("\printglossaries", "")
         return line
 
     def parse_chapter(self,chapter: str):
@@ -175,6 +175,7 @@ class TeXParser:
         text_with_line = text.replace("\\newline", "<br/>\n").replace("\\par","<br/>\n").replace("\\bigskip", "</p>\n\n<p>\n\t").replace("\\\\", "<br/>\n").strip()
         text_sep = text_with_line.replace("\\sep", "<br/><div class=\"center\">\n<p>\n<br/><b>***</b><br/>\n</p>\n</div>").strip()
         text_sep = text_sep.replace("\\begin{center}","<div class=\"center\">\n").replace("\\end{center}","\n</div>")
+        text_sep = text_sep.replace("\\end{document}","")
         text = text_sep.strip()
         text = self.parse_text_in_italic_and_bold_reloaded(list(text))
         chapters["name"] = name.strip()
