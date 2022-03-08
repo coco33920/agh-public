@@ -10,29 +10,29 @@
 
 \clearpairofpagestyles
 \ohead{\headmark}
-\setlength{\footheight}{18.00017pt}
+\setlength{\footheight}{21.6002pt}
 
 \usepackage{calc}
-\newcommand\footy{\parbox{\textwidth}{\hrulefill\kern-0.6ex\raisebox{-0.5ex}{$\Bigl[$\makebox[\widthof{1.2{\thepage\text{ of }\pageref{LastPage}}}][c]{\thepage\text{ of }\pageref{LastPage}}$\Bigr]$}\kern-0.5ex\hrulefill}}
+\newcommand\footy{\parbox{\textwidth}{\hrulefill\kern-0.6ex\raisebox{-0.5ex}{$\Bigl[$\makebox[\widthof{1.2{\thepage\,
+of \pageref{LastPage}}}][c]{\thepage{}\text{ of }\pageref{LastPage}}$\Bigr]$}\kern-0.5ex\hrulefill}}
 \cfoot[\footy]{\footy}
 
 \geometry{margin=1.8cm,head=14.5pt}
 
 \newcommand\sep{\begin{center}
-  $\ast$~$\ast$~$\ast$
-\end{center}}
+  \boldmath $\ast$~$\ast$~$\ast$
+\end{center}} 
 
 \makeglossaries
 \input{glossary.tex}
-\title{A Galactic HRT}
+\title{A Galactic HRT \\ Book I : The Greats Explosions}
 \author{Charlotte Thomas}
-\date{February 18th 2022}
 \begin{document}
     \maketitle
     \tableofcontents
     
     \chapter*{Edito}
-    Welcome to the PDF book of A Galactif HRT, this book was written using the ScribbleHub version of the story, on \LaTeX's book 
+    Welcome to the PDF book of A Galactic HRT, this book was written using the ScribbleHub version of the story, on \LaTeX's book 
     environment.\par 
     \bigskip
     Not so much artistic choices have been made, the chapter numbering is different from the ScribbleHub numbering 
@@ -41,37 +41,38 @@
     \bigskip 
     Thanks for reading this story, this book is published under the CC-BY-NC-SA 3.0 licence, available here 
     \url{https://creativecommons.org/licenses/by-nc-sa/3.0/}
-    you're basically allowed to: share this story, remix/alter this story, with the attributions conditions (i.e you must 
-    write my name (Charlotte THOMAS) and a link to this story (the scribblehub will do fine)), non commercial (you cannot 
+    you're basically allowed to: share this story, remix/alter this story, with the attributions conditions (i.e. you must 
+    write my name (Charlotte THOMAS) and a link to this story (the SH will do fine)), non-commercial (you cannot 
     sell this) and share-alike (you must share your altered story with the same licence.)
 
 
 
     \chapter*{Prologue}
-    \textit{written in \gls{us}}\newline
+    \textit{\textbf{Written in \gls{us}}}\newline
     …..Neuronal Connection Established\newline
     …..Identity checked\newline
     …..Name: Ariana Luivon\newline
-    …..Informations: Human, female, ambassador of the Union to Earth\newline
-    …..Language: \gls{es}\newline
+    …..Information: Human, female, ambassador of the Union to Earth\newline
+    ……Language: \gls{es}\newline
     …..Translation: OK\newline
-    \textit{written in Earth Standard}\newline
+    \textit{\textbf{written in Earth Standard}}\par
+    \bigskip
 
 Extracts of the logs of the Union Science Spaceship AEXIII-1,\par
-\textit{Date: 12th of December, 1902, 1002h Human Standard Time (HST)}\newline
+\textit{Date: 12th of December 1902, 1002h Human Standard Time (HST)}\newline
 
 Captain is talking\newline
 Our spaceship just dropped out of \gls{ftl} in the outer fairing of a stellar system, 
 the star is a class G yellow star, with a mass of approximately 0.8 Union Standard Stellar Mass (USSM), 
-radioactivity is normal and particle emition seems to indicate that the star is approximately mid life.\par
+radioactivity is normal, and particle emission seems to indicate that the star is approximately midlife.\par
 \bigskip
 We are currently in orbit of the 8th planet, 
 a beautiful but useless blue gas giant, 
 our engineer is looking the drive to see when we can resume our mission, 
-we are more than 80 light years away from home and we still have a few anomalies to investigate. 
+we are more than 80 light years away from home, and we still have a few anomalies to investigate. 
 While we're blocked into this stellar system the sensors are at full power to see if any biological activity is present.\newline
 
-\textit{Date: 12th of December, 1902, 1130h HST}\par
+\textit{Date: 12th of December 1902, 1130h HST}\par
 
 An alarm just went off, 
 the sensors picked up life signal, and weak electromagnetic activity on the third planet of this system. 
@@ -87,13 +88,13 @@ It is designed to pick up information
 this planet and specie may be interesting to study.\par
 \bigskip
 
-\textit{Date: 14th of December, 1902, 0103h HST}\par
+\textit{Date: 14th of December 1902, 0103h HST}\par
 
 The engineer just called my station, 
 they is positive the vessel is capable to safely perform an FTL jump right back to mainworld, 
-we have to inform the chain of command of our discovery, and we have to setup the legal shenanigans 
-to study the society of the 3rd planet, the coordinates of this system were safely put into the Union Shared Spacemap 
-and we installed an FTL jump-point approximately 0.7 light years away from the star, in a circular orbit.\par
+we have to inform the chain of command of our discovery, and we have to set up the legal shenanigans 
+to study the society of the 3rd planet, the coordinates of this system were safely put into the Union Shared Spacemap;
+finally we installed an FTL jump-point approximately 0.7 light years away from the star, in a circular orbit.\par
 \bigskip
 
 The central computer just approved the jump and I instantly felt the mechanical switch 
@@ -106,8 +107,8 @@ a few broken glass later we finally were at our FTL1 speed to join mainworld in 
 
 \textit{Ring ring ring}\par
 I jolted awake at the sound of my alarm going off, 
-today was Sunday but I have a meeting with Sylvia to draw, 
-they said they had a new idea for a powerful new propulsion system to incorporate into our vessel but 
+today was Sunday, but I have a meeting with Sylvia to draw, 
+they said they had a new idea for a powerful new propulsion system to incorporate into our vessel, however 
 I had to review it to see if the idea seems plausible and how to draw it.\par
 \bigskip
 My house automation system sensed the fact I was awake and 
@@ -116,13 +117,13 @@ saw the beautiful Sunday sun creeping by it, the sky was blue and unblemished, o
 slight shadow of a delivery drone passing by or the few air cabs circulating in center \gls{np}.\par
 \bigskip
 - “Good morning Ariana” said my house AI voice\newline
-“It's 1200h, 12th of October 2040, we have an outside temperature of 19°C in New Paris, 
+“It's 1200h, 12th of October 2040, we have an outside temperature of 19 °C in New Paris, 
 the university sent you 3 email during the night nothing too important just a remainder your 
 assignment is due tomorrow before 2pm, your meeting with Sylvia is scheduled for 1pm” the AI dutifully said\par
 \bigskip
 
 The temperature is a bit chilly but nothing surprising given the location of New Paris,
-a big city in the intersection of the once mighty European powers (France,Germany,Switzerland, Belgium, Italy) 
+a big city in the intersection of the once mighty European powers (France, Germany, Switzerland, Belgium, Italy) 
 now unified in the European State “\gls{europe}”, following the events of the \gls{mic} in 2023, 
 each continent started to unify themselves for the next decade, in 2028 with the \gls{ut} the once European Union 
 and the other nations of the European continent unified and formed a new nation called “Europe”. 
@@ -145,33 +146,33 @@ This fact alone explains how we went from new city to a 20 million enormous fede
 
 - “Thanks please send a message to Sylvia to notify them I'm awake, I'm going to take a shower”\par
 \bigskip
-As I undressed to shower I took my HRT, nowadays a simple injection daily was enough, 
+As I undressed to shower I took my HRT, nowadays, a simple injection daily was enough, 
 I mentally passed over all things I needed to do before tomorrow and decided it was nothing 
 important as the warm water dropped onto my breast and I marveled to the sensation of warm water on soft skin, 
 I started HRT a couple month ago after I got kicked out of my house by my parents and 
 I really was surprised of the speed it was going.\par
 \bigskip
 
-I dressed simply, I am tall, maybe 175cm, 
+I dressed simply, I am tall, maybe 175 cm, 
 but not skinny I had a bit of hips showing my breast are good enough to fill a simple B cup bra and 
 my long blonde hair fell just short of my waist, I wear a simple blue dress with leggings to keep me warm, 
 shoes with a slight heel to show my legs and I went to put make-up on.\par
 \bigskip
 
-Today was easy, no public appearance at all, just me and Sylvia, I decided to be conservative with makeup, 
-a bit of eye shadow and eye liner to show off my big green eyes and a bit of blush for my cheeks.\par
+Today was easy, no public appearance at all, just me and Sylvia, I decided to be conservative with make-up, 
+a bit of eye shadow and eyeliner to show off my big green eyes and a bit of blush for my cheeks.\par
 \bigskip
 
 As I passed the door of the dorms to walk over to Sylvia's home 
 I thought of how everything changed in just a couple of months, a year ago I still lived at my parent's 
 and haven't transitioned yet, Sylvia is the one that managed to convince me to come out at school and to open to the world, 
-I still think they feel somewhat responsible for the fact I got kicked out but that's foolish, it's my parent's fault, 
+I still think they feel somewhat responsible for the fact I got kicked out, but that's foolish, it's my parent's fault, 
 whatever I started to receive basic income from the Europe State as soon as I declared my situation and my 
 university provided me with a dorm room not too far away from where Sylvia is living.\par
 \bigskip
 
 \textit{Driiiiiiiing}\par
-I mentally laughed at the old school ring tone of Sylvia's home, 
+I mentally laughed at the old school ringtone of Sylvia's home, 
 a quirk their mom loved a thing imported from last century France she once mentioned, 
 her husband hates that thing, but as he was living in American Union to work on the 
 \gls{ijpl} (the successor of the JPL) she managed to stick it once again on their door, 
@@ -192,9 +193,9 @@ toothily at me with their big silly trademark smile\newline
 - “Ariana! You came! I'm soooooo happy to see you, and \textit{OH MY GOD YOUREBEAUTIFUL}” they squealed at the end of the sentence\par
 \bigskip
 
-I continue to just hug them without doing or saying anything, a few minute later I broke out of the hug and said\newline
+I continue to just hug them without doing or saying anything, a few minutes later I broke out of the hug and said\newline
 - “Yeah of course I came dummy you were so excited about your new idea of propulsion that 
-I became excited too! I brought my drawing case with me so we can work a bit today If you're feeling up to it”\par
+Of course I became excited too! I brought my drawing case with me, we can work a bit today If you're feeling up to it”\par
 \bigskip
 
 Sylvia and I were designing our own little (okay it's a big one) spaceship,
@@ -203,75 +204,75 @@ Sylvia and I were designing our own little (okay it's a big one) spaceship,
  we were dreaming of FTL rated ship, even if we knew that it was impossible and against the laws of physics 
  it was really fun to imagine, Sylvia's enthusiasm about it was not a surprise, their father is a propulsion 
  researcher at IJPL and was the head designer of the \gls{fsp}, he is responsible for the engine 
- that powered Saturn X, the rocket that re-launched the moon program. Nowadays he is designing a rocket powerful 
+ that powered Saturn X, the rocket that re-launched the moon program. Nowadays, he is designing a rocket powerful 
  enough to colonize the moon and organize large and regular missions between Earth and the Moon\par
  \bigskip
 
 He once was the head scientist of a little private space company, 
 before the collapse of the private space sector when the federation formed 
 and the fact that private space sector was more or less public space sector anyway, just less effective because 
-it had investors to satisfy. However he was immediately selected to be incorporated into the new IJPL and
+it had investors to satisfy. However, he was immediately selected to be incorporated into the new IJPL and
 quickly rose through the ranks.\par
 \bigskip
 
-- “Hum… nah I can't work now I have a theoretical computer science assignment due tomorrow 
+- “Hum… nah I can't work now I have a theoretical computer science assignment due tomorrow,
 and you know how I love computers but hate theoretical computers so, yeah” they said, bashfully\par
 \bigskip
 
 I giggled and then just stared at their bedroom, 
 I spent so much time here these last few years, I met them in middle school around 6 years ago, 
-Neither them nor I were publicly out at the time so we just enjoyed our mostly cishet lives together,
+Neither them nor I were publicly out at the time, so we just enjoyed our mostly cishet lives together,
  without any hint of romance or other interest, we were both really into programming and created a bunch of
 silly apps and game for our computers and gaming devices.\par
 \bigskip
 
 As time went we were still really close and were the respective 
 first people we came out to, they started first by coming out bisexual then pansexual, 
-I then made mine and a couple weeks later they came out as non-binary. That was in junior year of High School,
- I didn't came out to my parents until a few months ago after I turned 19 and they… yeah they didn't took it quite right so
+I then made mine and a couple of weeks later they came out as non-binary. That was in junior year of High School,
+ I didn't come out to my parents until a few months ago after I turned 19 and they… yeah they didn't take it quite right, so
 I lived here at Sylvia's a couple of days before the state provided me with money and a room. 
-Their parents offered me to stay and live with them but I was too afraid to be a bother so for a few months 
+Their parents offered me to stay and live with them, but I was too afraid to be a bother so for a few months 
 now I live alone, just off campus.\par 
 \bigskip
 
-Sylvia was beautiful, they is 170cm tall, with bright ear-length cotton-candy pink hair 
+Sylvia was beautiful, they is 170 cm tall, with bright ear-length cotton-candy pink hair 
 (they love to change the color of their hair) barely kept, with matching pink colored eyes, 
 I think they had that done a few months ago. They is really androgynous and loved to play with that, 
-they alternate between a really feminine wardrobe and a masculine one, seemingly randomly and 
+they alternate between a really feminine wardrobe and a masculine one, seemingly randomly, and 
 I have to admit that it is pretty cute.\par
 \bigskip
 
 Sylvia interrupted my thoughtful glance,\newline
-- “Hum, Aria? You seems distracted and, how does hrt works that fast with you? 
-You started a couple of months ago and you're already more feminine that I ever was and with that cute 
+- “Hum, Aria? You seem distracted and, how does HRT work that fast with you? 
+You started a couple of months ago, and you're already more feminine that I ever was and with that cute 
 face or yours and your height you're more and more irresistible each day” they quickly realized what 
 they was saying and put their hand in front of their mouth.\newline
-“I mean in a platonic way, you're beautiful, like too beautiful and hum you know me, it's… hum you know hard…” 
+“I mean in a Platonic way, you're beautiful, like too beautiful and hum you know me, it's… hum you know hard…” 
 they bashfully tried to cover up.\par 
 \bigskip
 
-- “Don't worry I get it and you're really cute like that” 
+- “Don't worry I get it, and you're really cute like that” 
 I grinned watching their blush deepening even further into shades of pink I didn't even know existed
 “And yeah I get what you're saying? But I think it's okay HRT has come a 
-long way since the start of the 21th century so maybe it is normal? But yeah it's definitely worth to think about”\par
+long way since the start of the 21st century, so maybe it is normal? But yeah it's definitely worth to think about”\par
 \bigskip
 
 I was really really really worried right now, 
 they noticed it was a little fast, I noticed it too and maybe everyone will notice? 
-I started to panic a little bit, it probably was normal but anxiety kicked in fast and I didn't have my med right now,
- I tried to breath but it was harder and harder to think every second, a mental fog fell and I quickly lost all
+I started to panic a bit, it probably was normal, but anxiety kicked in fast, and I didn't have my med right now,
+ I tried to breathe, however it was harder and harder to think every second, a mental fog fell, and I quickly lost all
 semblance of grip I had on my state\par
 \bigskip
 
 Sylvia, fast to recognize the effects of an anxiety attack in their best friend, embraced tightly Ariana\newline
 - “Breath… Hold in…. Breath… Hold in….. Breath, you're gonna be okay Aria, 
 it's nothing you are alright, everything's gonna be okay, you are safe, you are gonna be safe, I'll protect you, 
-I'll never let anything bad happen to you again okay?” they pulled their hair brush from the desk and started to 
+I'll never let anything bad happen to you again okay?” they pulled their hairbrush from the desk and started to 
 brush Ariana's hair to calm her, it was her little weak spot\par
 \bigskip
 
 A few minutes later Ariana was calm again and was breathing slowly, she tightened her embraced with Sylvia\newline
-- “Thanks Syl' it was close I don't think it's anything you're right and I'm already on HRT for like 
+- “Thanks Syl' it was close I don't think it's anything you're right, and I'm already on HRT for like 
 6 months? So it's probably to be expected” she, however, really hoped it would slow down, her brother 
 was in school and while he was okay he would be freaking out when he'll see her, she added mentally.\par
 \bigskip
@@ -284,8 +285,7 @@ Sylvia was not looking good too, and, a few seconds later, everything went black
 \chapter{Oh... Crap.}
 
 \textit{Units, times, and language has been translated from Union Standard to Earth Standard}\par
-\textit{\textbf{Aarin POV, A few months before the first chapter,
-TW: Abusive parents, traumas}}\par
+\textit{\textbf{Aarin POV, A few months before the first chapter, TW: Abusive parents, traumas}} \par
 \bigskip
 - “This mission is becoming very boring”, Aarin said to himself,
 Aarin was on his second year of the human observation mission, in the far Sol system, 
@@ -296,8 +296,8 @@ famous discovery made a few union years ago, no more than a century ago he corre
 \bigskip
 
 Unfortunately the mission was really boring, the automated probes stationed in the system were 
-really good at their job so he didn't have a lot to do. The next refueling ship was excepted next 
-month but he really was lonely. On a whim he decided to check on his latest… discovery.\par
+excellent at their job, so he didn't have a lot to do. The next refueling ship was excepted next 
+month, but he really was lonely. On a whim he decided to check on his latest… discovery.\par
 \bigskip
 
 See, his society does not have the concept of… gender it was a completely alien concept to them, so as a 
@@ -307,8 +307,8 @@ planet, and they really were doing a bad job at it, probes and scopes calculated
 becoming toxic to the Earthen lives.\par
 \bigskip
 
-However they outran every calculations of the union scientists when they unionized their planet in only two decades. 
-And they were really coming from far away… In and all their society was really interesting to study. 
+However, they outran every calculation of the union scientists when they unionized their planet in only two decades. 
+And they were really coming from far away… In and all their society was fascinating to study. 
 He secretly hoped they'll correct their trajectory and one day become ready to integrate the local inter-stellar community, 
 the rhythm of their discovery and the speed at which they develop new technologies were incredible.\par
 \bigskip
@@ -320,8 +320,8 @@ off the charts, even when accounting for errors. He thought that was finally the
 to earth surface.\par
 \bigskip
 
-Activating the human \gls{disguise}, an average-looking, young, thin and 180cm tall man with short black hair, 
-sharp facial structures, brown eyes and a little of muscle definition in his abs - the disguise was designed to be healthy but he managed to tweak it a little to his taste -
+Activating the human \gls{disguise}, an average-looking, young, thin and 180 cm tall man with short black hair, 
+sharp facial structures, brown eyes and a little of muscle definition in his abs - the disguise was designed to be healthy, but he managed to tweak it a little to his taste -
  he joined the shuttle bay and activated the shuttle AI.\par
  \bigskip
 
@@ -346,21 +346,21 @@ subject and… Listen to her\par
 
 After landing and setting up the cloaking mechanism to assure nobody will spot the strange object, 
 Aarin jumped out of the cockpit and prepared to peacefully explore the human megalopolis, 
-he chose this city because of its strangeness, it was located outside of the old centers, 
+he chose this city because of its strangeness, it was located outside the old centers, 
 at least the centers the probes discovered and flagged as such, and from the data gathered by the continuous 
-surveillance it was new, a very young city, so his scientific curiosity was picked and the city was selected to 
+surveillance it was new, a very young city, so his scientific curiosity was picked, and the city was selected to 
 become the first direct observation site of humans by union scientists!\par
 \bigskip
 
 He marveled at the diversity of the architectures from the surrounding buildings, 
-there was a lot of different styles yet it was really working well together. Then he came into viewing distance of his target,
+there was a lot of different styles, yet it was really working well together. Then he came into viewing distance of his target,
  the human subject, he knew how to do that, he just had to know why she felt so sad all the time. \par
  \bigskip
 
 At the same time his target walked towards her home, he quickly activated the disguise again and transformed 
 himself into a cat, he picked this earth life form because he learned that it was considered cute by humans and 
 noticed they always tended to react positively even if they didn't know the said cat. He ran over and managed to 
-sneak into the house just as his target closed the door. Crap, he scolded himself, he didn't planed exactly how to 
+sneak into the house just as his target closed the door. Crap, he scolded himself, he didn't plan exactly how to 
 know her, he couldn't just stick a microphone on her as a cat… \par
 \bigskip
 
@@ -370,26 +370,26 @@ Aarin decided to closely listen to her and to record her and transmit it to the 
 \bigskip
 
 - “Mom, dad” she said, softly, almost like she didn't want her parents to hear her.\newline
-- “yes Arthur? Said her mother, his father seemed not to pick up so she said
- “hey, listen to arthur he has something to tell us”\newline
+- “yes Arthur? Said her mother, his father seemed not to pick up, so she said
+ “hey, listen to Arthur he has something to tell us”\newline
 
 ° “he?” thought Aarin, “but she's a girl isn't it obvious?” 
 he was really puzzled and was getting more and more frustrated by the minute, 
 he thought he finally had figured out humanity and their weird gendered society and 
-here he studied this girl (boy?) for months now and he never saw that she...he… 
-they was not a girl? He was positive the computer identified her as female and he was sure 
-he configure it to detect gender, so that didn't make any sense.\par
+here he studied this girl (boy?) for months now, and he never saw that she...he… 
+they was not a girl? He was positive the computer identified her as female, he was absolutely sure 
+he configured it to detect gender, so that didn't make any sense.\par
 \bigskip
 
 - “I want you both to stay quiet until I have finished” her parents then nodded 
-“..it's something I want to tell you for a few years now but I never have had the willpower to do so, 
-and I'd always chicken out before I had the chance to tell you but I can't hold it anymore I need to change things” 
-her mom tried to said something but Arthur, her birth name Aarin deduced, glared at her and she kept quiet, 
+“..it's something I want to tell you for a few years now, but I never have had the willpower to do so, 
+and I'd always chicken out before I had the chance to tell you, however I can't hold it anymore I need to change things” 
+her mom tried to said something but Arthur, her birth name Aarin deduced, glared at her, and she kept quiet, 
 “Syl' finally convinced me to come out” at that word her father took a grim face but kept listening nonetheless.\newline
 
 “I feel like I was meant to be a girl, deep down I am a girl, I am transgender, I am a girl.” she said on the verge of crying,
  but neither of her parents tried to comfort her. Aarin was thinking fast, 
- he knew enough of humans to recognize this as a bad situation but he remained confused, what
+ he knew enough of humans to recognize this as a bad situation, but he remained confused, what
   “transgender” meant, of course she was a girl if that was obvious even for him a being from another world which 
   didn't even have the concept of gender, it should be for her parents who know her very well, all of this situation 
   made no sense whatso-\par
@@ -404,16 +404,16 @@ autism spectrum and other neurodivergences in humans before departing \gls{uc}. 
 - “No, you are not a woman Arthur, you're my son, and you will remain my son, no amount of… 
 cosmetic nonsense can change that” yelled his father right in-front of Arthur\newline
 
-- “Arthur, sweetheart, you can't disfigure yourseUnion Centrallf with those procedures or 
+- “Arthur, sweetheart, you can't disfigure yourself with those procedures or 
 these hormones you know it won't work, you know you'll never be a real girl, so you should stop
  thinking about that, maybe you could cut your hair? Or change your hobbies ? I'm sure it would help to pass that phase, 
- it will be alright and forgotten in no time, it's perfectly fine at your age to be confused but it will fade with
+ it will be alright and forgotten in no time, it's perfectly fine at your age to be confused, it will fade with
   time when you'll find a lovely wife and start a family” her mother said, with an annoyingly huge grin on her face\par
   \bigskip
 
 Aarin remained still, staring at the girl, her parents were completely destroying her why can't they see that? 
 They are her parents they should recognize their child's suffering ! Aarin was completely flabbergasted at the 
-interaction it was so alien so unfamiliar that he didn't know how to react, he couldn't do anything here without his 
+interaction it was so alien, so unfamiliar, that he didn't know how to react, he couldn't do anything here without his 
 stuff and he couldn't expose the mission but it was so hard to see the girl completely shot down without being able 
 to react or answer.\par
 \bigskip
@@ -421,17 +421,17 @@ to react or answer.\par
 Suddenly, Arthur snapped out of her state, met her parents with her eyes and with a calm and determined tone said\newline
 
 - “Dad, mom, I will repeat one more time, I am a girl, I will transition with or without your help or permission, 
-I will be happy and you can't do anything about it, now you can chose to keep me in your lives or not but
- mine will continue just fine and I will do it I swear the goddess of this world. And I'll say it only once. 
+I will be happy, and you can't do anything about it, now you can choose to keep me in your lives or not,
+ mine will continue just fine, and I will do it I swear the goddess of this world. And I'll say it only once. 
  My. Name. Is. Ariana” carefully articulating each word at the end.\par
  \bigskip
 
-Ariana, Aarin thought, it was pleasant to know her preferred name no more Human whatever 001 thing.\newline
+Ariana, Aarin thought, it was pleasant to know her preferred name no more Human whatever 001 thingy.\newline
 It was then that her father decided to slap her, hard and again Aarin remained still, 
-completely agaped by what just unfolded.\par
+completely dumbfounded by what just unfolded.\par
 \bigskip
 
-- “Son, ARTHUR” his father spat, “you are a member of this family, of my family, and you will abide by our rules 
+- “Son, ARTHUR” his father spat, “you are a member of this family, of my family, and you will abide by our rules,
 or you'll not be allowed to be part of this family. So I'll ask you one time son, Arthur, 
 will you give up these lies and fallacies and come back on the right track?” His father said in a deep creepy voice.\newline
 
@@ -439,7 +439,7 @@ will you give up these lies and fallacies and come back on the right track?” H
 
 - “So be it, you're not a member of this family anymore, you have an hour 
 to quit this house before we start pushing you out ourselves, you are by then nothing, 
-you don't have a family to rely on, you are by yourself and we don't know you anymore, 
+you don't have a family to rely on, you are by yourself, and we don't know you anymore, 
 you'll now be wandering outside like a nobody, like nothing, like your kind is. Go thing, 
 you have 57 more minutes to take your stuff”. Her father, said calmly.\par
 \bigskip
@@ -450,21 +450,21 @@ non-vocal answer to the non-vocal question. She quickly moved in her bedroom to 
 \sep 
 
 She came back less than 15 minutes later, she glanced a last time at her parents, and headed to the door.\newline
-- “And take that damn cat with you! I don't know why its here!” her father yelled.\par
+- “And take that damn cat with you! I don't know why it's here!” her father yelled.\par
 \bigskip
 
 A long, silent, walk later she finally arrived at the home of her best friend Aarin identified, 
-their name was Sylvia and they was really interesting too, they was non-binary which is another thing in their 
-gender game but his mood wasn't at research, He was really scared for the girl, she just was kicked out of
+their name was Sylvia, and they was fascinating too, they was non-binary which is another thing in their 
+gender game, but his mood wasn't at research, He was really scared for the girl, she just was kicked out of
  her home? Is that a thing humans do? That seems really old-fashioned and just… weird, that grossed him out.\par
  \bigskip
 
-The door swung open and a woman was behind it\newline
+The door swung open, a woman was behind it\newline
 - “Hey Art…” then her eyes widened considerably when she saw the state of the poor girl 
 “Oh my god come inside I will prepare you a hot tea, what happened sweetheart are you okay?”\par
 \bigskip
 
-The sound alerted Sylvia and they was running down the stairs to take Ariana in a big tight hug\newline
+The sound alerted Sylvia, they was running down the stairs to take Ariana in a big tight hug\newline
 
 - “Oh my god Ar are you okay? What happened” Sylvia shouted, completely panicked, 
 their mom came back from the kitchen and gave Ariana a steaming hot mug of mint tea, her favourite and asked,\newline
@@ -473,14 +473,14 @@ their mom came back from the kitchen and gave Ariana a steaming hot mug of mint 
 \bigskip
 
 Aarin saw the thoughtful expression of Ariana, he was sure she was thinking a hundred 
-things at the moment and didn't want to repeat the experiment but something must have change 
+things at the moment and didn't want to repeat the experiment, however something must have change 
 Ariana's opinion as she began to speak softly, barely a whisper, \par
 \bigskip
 
 - “I… came out to my parents, I came out as a transgender girl, they… especially dad, 
 really did not take it well, basically ruled me out of the family and gave me an hour to be out 
 of the house, I'm really alone no am I not?” she chuckled at that, a sad chuckle, 
-but Sylvia took her into her arm and gently said\par
+but Sylvia took her into their arm and gently said\par
 \bigskip
 - “hey, no you're not alone, you'll never be alone Ariana I am here, I'll always be there for you.”\par
 \bigskip
@@ -490,39 +490,39 @@ but Sylvia took her into her arm and gently said\par
   \bigskip
 
 Ariana started to cry and Aarin mentally relaxed, the situation was alright, 
-Ariana was not in immediate danger anymore thanks to her best friend's mom.
- But he couldn't even think of not helping her, she was kicked out of her home! That was a little breach of protocol 
+Ariana was not in immediate danger, thanks to her best friend's mom.
+ But he couldn't even think of not helping her, she was kicked out of her home! That was a little breach of protocol,
  but he was positive he was gonna help her.
 
  \sep
 
-Aarin sighed as he remembered how it started, a few months ago with Ariana's coming out, in the following month he 
+Aarin sighed as he remembered how it started, a few months ago with Ariana's coming out, in the following months he 
 learned as much as he could about transgender people on the humans planet-wide information sharing system 
 they called “internet”. That was fascinating, and frightening, he never could have guessed the fact their 
 society was so gendered could hurt so much a portion of the population.\par
 \bigskip
 
-He then made… a mistake, He realize he could accelerate how their transition methods worked and 
-made them more complete, he spent years studying humans, their physiology and psychology so he knew their 
-biological default form was flawed they couldn't change it like a few species in the Union and were really far 
-from inventing shape shifting technologies, so they never could obtain a comfortable body, even if he noted
+He then made… a mistake, He realized he could accelerate how their transition methods worked and 
+made them more complete, he spent years studying humans, their physiology and psychology, so he knew their 
+biological default form was flawed they couldn't change it like a few species in the Union, furthermore they were really far 
+from inventing shape-shifting technologies, so they never could obtain a comfortable body, even if he noted
  that the majority of the population were… okay with their body. \par
  \bigskip
 
-Whatever, the real problem was he decided to give Ariana the powered up HRT he made and 
+However, the real problem was he decided to give Ariana the powered up HRT he made and 
 swapped out her meds last month. But he must have made an error in the calculations because the effects 
-were far faster than he originally planed, and Ariana noticed. Then Sylvia noticed. This was really bad
+were far faster than he originally planed, and Ariana noticed. Then Sylvia noticed. This was terrible
  because if others noticed this, it might bring planet-wide panic fast and humans were not ready for first contact yet.\par
  \bigskip
 
-He finally decided to transport Ariana and Sylvia from their room directly to the mess to explain them the conundrum, 
-it was the best move, and maybe that will speeds up his research on humans. That would not be the first times 
+He finally decided to transport Ariana and Sylvia from their room directly to the mess to explain to them the conundrum, 
+it was the best move, and maybe that will speed up his research on humans. That would not be the first times 
 observer made local allies by accident. Or in his case almost by accident. \par
 \bigskip
 
 He carefully entered the coordinates of Sylvia's home, remembered to activate his human disguise, 
-and powered the standard short range matter transporter up, it could be used on biological material
- but it was not portable so if he beamed himself down on Earth he couldn't join his ship again so, yeah, he used shuttles,
+and powered the standard short range matter transporter up, it could be used on biological material, 
+but it was not portable so if he beamed himself down on Earth he couldn't join his ship again so, yeah, he used shuttles,
   safer.\par
   \bigskip
 
@@ -530,28 +530,30 @@ He initialized the transport sequence and prepared himself mentally for the hard
 
 \sep
 
-\textit{\textbf{Ariana's POV}}
+\textit{\textbf{Ariana's POV}}\par
+\bigskip
 
 When light came back I was sitting in a bench with a comfortable cushion on it and I saw Sylvia stirring 
-beside me so I started to explore the surrounding and we were not in Sylvia's home anymore. 
-I started to hyperventilate when I felt Sylvia's hug and relief washing over me, at least they was there for me so 
+beside me, so I started to explore the surrounding, and we were not in Sylvia's home anymore. 
+I started to hyperventilate when I felt Sylvia's hug and relief washing over me, at least they was there for me, 
 I wasn't alone.\par
 \bigskip
 
-We saw a human figure a few meters away from us and before we could react he spoke in a foreign accent I could not place.\par
+We saw a human figure a few meters away from us, and before we could react he spoke in a foreign accent I could not place.\par
 \bigskip
 
 - “So. I think I owe you an explanation” said the voice.
 \chapter{We Need To Talk}
-\textit{\textbf{3rd person POV.}}
+\textit{\textbf{3rd person POV.}}\par
+\bigskip
 
-- “And that leads us to now…” Aarin said, finishing his hour long explanation of who he is.\par
+- “And that leads us to now…” Aarin said, finishing his hour-long explanation of who he is.\par
 \bigskip
 
 - “So… you're telling us that you're a benevolent alien coming from a far 
 away union of species and planets to study our planet and specie to monitor when we will be 
 ready to initiate first contact? But I do not understand, how? Who are you? Why are we here? 
-How are we here ? How are you talking in our language? And for god's sake why are you so…. Human?” 
+How are we here ? How are you talking in our language? And for god's sake, why are you so…. Human?” 
 Ariana yelled more panicked rather than angry, as Sylvia covered their ear to protect themselves 
 from the sheer volume of Ariana's voice.\par
 \bigskip
@@ -561,34 +563,34 @@ but first I would not say I'm a benevolent alien, I'm only here to
 observe you and your specie. As I said my name is Aarin, that is in your language, 
 you could not pronounce or even comprehend my name spoken in my language, You're here because I made a mistake,
  I took pity of you when I witnessed your parents evicting you from your 
- house and decided to boost a little bit your HRT, unknowingly I boosted it too much and I had to 
+ house and decided to boost a bit your HRT, unknowingly I boosted it too much, finally I had to 
  introduce myself to you to avoid panic or public disclosure of the effect.” Aarin said, calmly, almost coldly.\par
  \bigskip
 
-- “So it was you! I was sure my HRT worked faster than expected, well I would not have imagine an alien boost it 
+- “So it was you! I was sure my HRT worked faster than expected, well I would not have imagined an alien boost it 
 but thanks by the way, and you witnessed my parents kicking me out? How? I don't remember seeing you.”
  Ariana cut Aarin before he could answer the next question.\par
  \bigskip
 
 - “I thought you wanted the answer to your question young lady stop cutting me when I'm talking!” 
-Aarin said with a little smug smile on his face, “To how I witnessed it, I will said one thing, you remember the cat?” 
+Aarin said with a little smug smile on his face, “To how I witnessed it, I will say one thing, you remember the cat?” 
 Ariana nodded “It was me, I have a shape-shifting device, it's also the answer to your last question, 
-our specie have had the technology to shape-shift for centuries now so we do not even have a “normal” shape it's 
+our specie have had the technology to shape-shift for centuries now, so we do not even have a “normal” shape it's 
 very diverse you should see our mainworld with its millions of different shaped and coloured people.”\par
 \bigskip
 
 “As to how you're here I transported you here with a short-range biological transporter that's as simple as that, 
 your physiology is new for it so forgive me for the rude journey here. I'm talking in your language because I spent the
  last decades learning and studying your society including learning Earth Standard, we also have automatic translators 
- tuned to you but I do prefer talking with my own mouth.”\par
+ tuned to you, but I do prefer talking with my own mouth.”\par
  \bigskip
 
-Ariana took a few seconds digesting what.. Aarin just said, there was another worlds, shape-shifting? Transporters? 
+Ariana took a few seconds digesting what.. Aarin just said, there were another worlds, shape-shifting? Transporters? 
 All of that was really a lot to take in, but she has only one important question.\par
 \bigskip
 
 - “If you're not benevolent and only here to observe, why were you in my house to begin with? 
-Why did you decided to help me? That does not make sense at all!”\par
+Why did you decide to help me? That does not make sense at all!”\par
 \bigskip
 
 - “My original mission was just to monitor your civilization, but see I'm a xenosociologist, I thrive on learning 
@@ -601,15 +603,15 @@ When I saw that your specie did not have any shape-shifting technologies or abil
 
 “A few weeks into my mission I decided to push to the next phase and pick a human subject to study. I took your city 
 because of its size, the number of inhabitant, and the diversity of the population, I made the computer chose a 
-random young human and it was you! I was really lucky thinking back.\par
+random young human, and it was you! I was really lucky thinking back.\par
 \bigskip
 
 I was in your house because even if my computer calculated that your physical health was in the normal parameters 
 for humans your mental parameters were completely off and my science curiosity was picked, I then tracked you,
- transformed into a cat and sneak into your house to stuck a microphone on you. \par
+ transformed into a cat and sneak into your house to stick a microphone on you. \par
  \bigskip
 
-But then you came out and the rest is history, I learned about the concept of transgender people, of 
+But then you came out, and the rest is history, I learned about the concept of transgender people, of 
 transition and as I said… I witnessed a truly shocking event I could not think objectively as a scientist 
 studying his subject, I wanted to help you, and here we are with a big problem on our heads.”\par
 \bigskip
@@ -629,16 +631,16 @@ capable of killing you in mere seconds space, that one? She thought. She collaps
 a few seconds later Sylvia was embracing their best friend and was whispering calm and gentle words to try to calm her.\par
 \bigskip
 
-A minute later as Ariana was resting on the bench Sylvia turned themselves to face Aarin and he calmly answered\par
+A minute later as Ariana was resting on the bench Sylvia turned themselves to face Aarin, he then calmly answered\par
 \bigskip
 
 - “Yes Sylvia, we're in space, in my vessel, it's a 20 years old long-range science exploration 
 and planetary observation ship. Its standard equipment is indeed a large nuclear fusion reactor and a 
 few tons of anti-matter to power fast jump. In its cruise sublight speed we can make the journey from your sun 
 to Pluto in a week, its FTL cruise speed it's capable of joining Union Central 80 light years from here 
-in approximately 3 months, 2 months and a half in an emergency. Finally in case of an emergency it can consume 
-anti-matter and deuterium to power an instantaneous 0.1 light year jump, it however require to stop to cool 
-off the engine, and anti-matter is a rare substance difficult to manufacture so it's only in case of an emergency.\par
+in approximately 3 months, 2 months and a half in an emergency. Finally, in case of an emergency it can consume 
+anti-matter and deuterium to power an instantaneous 0.1 light year jump, it however requires stopping to cool 
+off the engine, and anti-matter is a rare substance difficult to manufacture, so it's only in case of an emergency.\par
 \bigskip
 
 Sylvia and Ariana brushed off the mention of their names and locked themselves into a shared glare with big 
@@ -648,12 +650,12 @@ dilated eyes and simultaneously shot out:\par
 \textit{- “FTL is real!?”}\par
 \bigskip
 
-Aarin pleased to see the discussion was going well so far relaxed a little bit, he was really tense, 
+Aarin pleased to see the discussion was going well so far relaxed a little, he was really tense, 
 he never did that before and for good reasons! He should not do that. But he had made a mistake, 
-he mentally add to talk to Ariana about the remaining of her transition and how she wanted her future body to be, 
-at least he could give her her “true form”. He tried not to think about how he was going to explain that to his superior 
+he mentally added to talk to Ariana about the remaining of her transition and how she wanted her future body to be, 
+at least he could give her, her  “true form”. He tried not to think about how he was going to explain that to his superior 
 back home and to focus on the current task, that is talk to the two young humans in his vessel and try to at least have 
-them trust him, if he could managed to become friend with them it would be good, for his research of course.\par
+them trust him, if he could manage to become friend with them, it would be good, for his research of course.\par
 \bigskip
 After that rather… difficult discussion, at least on their part, they have to completely reconsider their 
 sense of world and their place in the universe, he was sure they were gonna do it, but it understandably would
@@ -662,17 +664,17 @@ sense of world and their place in the universe, he was sure they were gonna do i
  just received.\par
  \bigskip
 
-- “Please launch 2 small FTL probes outside of the heliosphere one starboard side and one on the port side please. 
+- “Please launch 2 small FTL probes outside the heliosphere one starboard side and one on the port side please. 
 Equip them with long range wide sensors and forward the data to this computer” he commanded to the voice system 
 which answered by the familiar beep.\par
 \bigskip
 
 The probes launched then he could finally relax, the last few days have been stressful but nothing unusual happened,
- he now have 2 friends he could use on the ground to explore for himself, that would be much easier to take a 
+ he now had 2 friends he could use on the ground to explore for himself, that would be much easier to take a 
  shuttle and waste a few hours. He took his student last tests he received via the long range communication arrays
   placed not far from Pluto, the first planet of this system discovered. Surprisingly enough he also learned on 
   the human internet that Pluto has been withdrawn from the planets and lost its planet status due to
-   the official definition of planet. Well it makes sense to him so he didn't think about it too much.
+   the official definition of planet. Well it makes sense to him, so he didn't think about it too much.
 
 \sep 
 
@@ -682,39 +684,39 @@ I sat here dumbfounded, waiting for the dream to end.\par
 \bigskip
 But it never did.\par
 \bigskip
-I somewhat knew deep down “we are not alone”, but I never excepted to see a bacteria coming from another planet, and he is much more than a simple bacteria!
+I somewhat knew deep down “we are not alone”, but I never excepted to see a bacterium coming from another planet, and he is much more than a simple bacterium!
 Sylvia seemed thoughtful, I decided not to bother them and simply thinking about the matter at hand. 
-Despite saying he is just an observer, he intervened and sped up my HRT! I was really excited about the sheer possibilities 
+Even if he said he was just an observer, he intervened and sped up my HRT! I was really excited about the sheer possibilities 
 of such a technology, I mentally noted to talk to him about this technology later, I'm sure he can help correct 
 the deficiencies of my birth body, I squealed at that thought, and at that moment Sylvia came out of her trance.\par
 \bigskip
 
 - “Ariana, are you okay? I mean an alien coming from nearly 100 light years away from us just randomly decided to 
 change your treatment with something more advanced based on his specie technology? And what if it was dangerous? 
-What if he was dangerous? A lot of questions remains unanswered and I admit it creep me out”\par
+What if he was dangerous? A lot of questions remains unanswered, and I admit it creep me out”\par
 \bigskip
 
-- “I am not okay okay, but I try to see the good things, really Syl, you saw what he can do, imagine what this technology 
-could do? I understand we can't bring this back home but you know, at least I could be closer to my true self” 
+- “I am not okay-okay, but I try to see the good things, really Syl, you saw what he can do, imagine what this technology 
+could do? I understand we can't bring this back home, but you know, at least I could be closer to my true self” 
 Ariana said, with her tone lowering at the end of her sentence.\par
 \bigskip
 
-Sylvia did not answered with words, they just sat near me and side-hugged me, “she really needs that...” 
-Sylvia thought. Sylvia, themselves, in their head at least, was also squealing about this ship's technologies.\par
+Sylvia did not answer with words, they just sat near me and side-hugged me, “she really needs that...” 
+Sylvia thought. Syl, themselves, in their head at least, was also squealing about this ship's technologies.\par
 \bigskip
 
 - “Hey Ariana you know this morning we thought FTL was a science fiction concept that was impossible to achieve. 
 You know like in these old shows, Star Trek I think it was called, they warped space if I recall correctly? You think 
-this ship works like that? Or is it another kind of FTL? It may be jumps? Or worm holes ? Or some future physics concept
- we did not even started to imagine let alone study!”\par
+this ship works like that? Or is it another kind of FTL? It may be jumps? Or wormholes ? Or some future physics concept
+ we did not even begin to imagine let alone study!”\par
  \bigskip
 
-I smiled as I recognized my friend's nerd-mode. To be honest I was incredibly curious about the kind of FTL this ship is 
-equiped with, running some calculation in my head, I deduced it was equivalent to about 1 light years per day, assuming 
+I smiled as I recognized my friend's nerd-mode. To be honest I was incredibly curious about the kind of FTL this ship was 
+equipped with, running some calculation in my head, I deduced it was equivalent to about 1 light years per day, assuming 
 the engine was designed to work all day long.\par
 \bigskip
 
-- “Yeah, I agree, this looks awesome and I'm really curious too, maybe now we are in the secret they'll let us learn a bit 
+- “Yeah, I agree, this looks awesome, also I am really curious too, maybe now we are in the secret they'll let us learn a bit 
 about their tech? I would like to have my own FTL ship.” I smiled fondly at that thought\par
 \bigskip
 
@@ -730,7 +732,8 @@ and Aarin entered our lounge.
 
 \sep
 
-\textit{\textbf{3rd person POV}}
+\textit{\textbf{3rd person POV}}\par
+\bigskip
 
 After about an hour he decided to check on his guest, he had a proposition to offer them, 
 in part to excuse himself from the rude journey here, but mostly because he saw Ariana and Sylvia's 
@@ -740,10 +743,10 @@ of their civilization. But that was an idea to think about later, now he was in 
 \bigskip
 
 - “Hello, sorry for keeping you waiting, I hope you had time to think about what I just said,
- I have an offer for you. I would like you to gather me some intel on how your society works, I am an exosociologist
+ I have an offer for you. I would like you to gather me some intel on how your society works, I am a xenosociologist
   after all. But before asking you to do some job and to answer endless bizarre questions by dozens, would you like 
   a tour of the ship? I think you also would like a tour of the sol system I can limit the power of the FTL engine 
-  to lower the travel time between planets, it's not recommended but your system is quite empty, no offense by the way, 
+  to lower the travel time between planets, it's not recommended, but your system is quite empty, no offense by the way, 
   I think we would depart between one and two weeks what's your thought?”\par
   \bigskip
 
@@ -754,8 +757,8 @@ finish his thought Ariana began talking,\par
 \bigskip
 
 - “We would love visiting the ship! We still have a few hours ahead of ourselves, unfortunately, for the tour of
- the solar system, we would be on board of course but we don't have one to two week empty now, however november 
- break is in two weeks so we will have at least three weeks of freedom what are your thought about that?”\par
+ the solar system, we would be on board of course, but we don't have one to two weeks free now, however November's break
+ is in two weeks, so we will have at least three weeks of freedom what are your thought about that?”\par
  \bigskip
 
 Aarin was pleased his guest were excited about the tour, to be honest he would be too! They had the only-in-a-lifetime 
@@ -767,21 +770,21 @@ He agreed to show them the ship now and to arrange the system touring three week
 \bigskip
 
 
-He started by the cabin, - “So this ship is a small science exploration it do not have a lot of cabin, you will live 
+He started by the cabin, - “So this ship is a small science exploration it does not have a lot of cabins, you will live 
 in the co-pilot cabin just beside mine,” just as he continued he was sure he saw Ariana sneakily take a peek of the 
-cabin but it also could be his imagination. They then stopped by the main engine room which housed the big nuclear 
+cabin, but it also could be his imagination. They then stopped by the main engine room which housed the big nuclear 
 reactor and the small yet sturdy anti-matter reaction chamber for the jump, he explained to the young humans behind him.\par
 \bigskip
 
-- “We cannot enter directly the engine room itself because of the residual radiation and the temperature of t
-he room, as you know dissipating heat in space is hard and the thermal radiators made to emit heat as infra red radiation 
+- “We cannot enter directly the engine room itself because of the residual radiation and the temperature of the
+room, as you know dissipating heat in space is hard and the thermal radiators made to emit heat as infra-red radiation 
 outside in space are not enough to lower enough the temperature of this room to allow most of known sentient life, 
 this room is thermally-isolated and have powerful anti-radiations active and passive shields to prevent the 
 radiation to damage living tissues” He explained, grinning at the two young humans completely absorbed by the view 
-of the several dozen meters tall and hundred of meters wide nuclear reactor stored behind the “glass”\par
+of the several dozen meters tall and hundreds of meters wide nuclear reactor stored behind the “glass”\par
 \bigskip
 
-- “How big is this ship!? How can you stay stealth and isolated from earth sensors?” said Sylvia, still self absorbed by 
+- “How big is this ship!? How can you stay stealth and isolated from earth sensors?” said Sylvia, still self-absorbed by 
 the view.\par
 \bigskip
 
@@ -815,8 +818,6 @@ Back on earth, the two friends were a bit shaken but seemed okay, they glanced a
 hugged tightly.\par
 \bigskip
 
-Just before Sylvia broke the hug, a thought came to Ariana, “There was only one bed…”
-
-%End after the epilogue, the glossary
+Just before Sylvia broke the hug, a thought came to Ariana, “There was only one bed…”.
 \printglossaries
 \end{document}

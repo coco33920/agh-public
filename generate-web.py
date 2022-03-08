@@ -66,12 +66,13 @@ def parse_chapter(chapter: str):
     """
     chapters = {}
     a = chapter.splitlines()
+    a = [" " + b for b in a]
     first_line = a[0]
     name = first_line.replace("{","").replace("}","").replace("*","").strip()
     text = ("<p>\n\t" + "".join(a[1:])).strip()
-    text_with_line = text.replace("\\newline", "<br/>\n").replace("\\par","<br/>\n").replace("\\bigskip", "</p>\n\n<p>\n\t").strip()
+    text_with_line = text.replace("\\newline", "<br/>\n").replace("\\par","<br/>\n").replace("\\bigskip", "</p>\n\n<p>\n\t").replace("\\\\", "<br/>\n").strip()
     text_sep = text_with_line.replace("\\sep", "<br/><div class=\"center\">\n<p>\n<br/><b>***</b><br/>\n</p>\n</div>").strip()
-
+    text_sep = text_sep.replace("\\begin{center}","<div class=\"center\">\n").replace("\\end{center}","\n</div>")
     text = text_sep.strip()
     text = parse_text_in_italic_and_bold_reloaded(list(text))
     chapters["name"] = name.strip()
@@ -99,15 +100,18 @@ def parse_text_in_italic_and_bold_reloaded(text):
     result = ""
     in_italic = False 
     in_bold = False
+    last_opened = [] #0 rien 1 it 2 b 
     while i<len(text):
         word = text[i]
         if word=="{" and last_char=="t":
         #nous avons affaire à \textit{
             in_italic = True
+            last_opened.append(0)
             result += "<i>"
         elif word=="{" and last_char=="f":
         #nous avons affaire à \textbf{
             in_bold = True
+            last_opened.append(1)
             result += "<b>"
         elif word=="{" and last_char=="s":
         #nous avons affaire à gls, parse le nom du gls
@@ -116,14 +120,21 @@ def parse_text_in_italic_and_bold_reloaded(text):
             i = s
         elif word=="}":
             if in_italic==True and in_bold==False:
+                last_opened.pop()
                 result += "</i>"
                 in_italic = False
             elif in_italic==False and in_bold==True:
+                last_opened.pop()
                 result += "</b>"
                 in_bold = False
             elif in_italic==True and in_bold==True:
-                result += "</i>"
-                in_italic = False
+                to_oppen = last_opened.pop()
+                if to_oppen == 0:
+                    result += "</i>"
+                    in_italic = False
+                else:
+                    result += "</b>"
+                    in_bold = False
             else:
                 result += "}"
         else:
@@ -145,8 +156,11 @@ def print_chapter(i):
 
 def write_chapter(i,filename):
     a = chapters[i]
-    line = "<h2>" + a["name"] + "</h2>\n\n"
-    total_text = line + a["text"]
+    line = "<title>A Galactic HRT: HTML Version</title>\n<body>\n"
+    line += "<style>\n .center { \n margin:auto; \n text-align: center; \n } \n </style>"
+    line += "<h1 id=\"title\" class=\"center\">" + "A Galactic HRT : HTML Version" + "</h1>\n\n"
+    line += "<h2>" + a["name"] + "</h2>\n\n"
+    total_text = line + a["text"] + "</body>"
     file = open(filename, "w")
     file.write(total_text)
     file.close()
@@ -164,7 +178,7 @@ def print_glossary():
 
 def write_file(filename):
     line = "<title>A Galactic HRT: HTML Version</title>\n<body>\n"
-    line = "<style>\n .center { \n margin:auto; \n text-align: center; \n } \n </style>"
+    line += "<style>\n .center { \n margin:auto; \n text-align: center; \n } \n </style>"
     line += "<h1 id=\"title\" class=\"center\">" + "A Galactic HRT : HTML Version" + "</h1>\n\n"
     i = 0
     line += "<div id=\"tableofcontent\" class=\"center\"><br/>\n"
