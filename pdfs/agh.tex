@@ -24,12 +24,31 @@ of \pageref{LastPage}}}][c]{\thepage{}\text{ of }\pageref{LastPage}}$\Bigr]$}\ke
   \boldmath $\ast$~$\ast$~$\ast$
 \end{center}} 
 
+\newenvironment{dedication}
+    {\vspace{6ex}\begin{quotation}\begin{em}}
+    {\par\end{em}\end{quotation}}
+
+
 \makeglossaries
 \input{glossary.tex}
 \title{A Galactic HRT \\ Book I : The Greats Explosions}
 \author{Charlotte Thomas}
 \begin{document}
     \maketitle
+    \begin{dedication}
+      To everyone who feels under-represented in Science Fiction,\newline
+      To my professors who supported and helped me even in the darkest hours,\newline
+      To my friends without whom I'd not be here,\newline
+      To Ninon for their love and support,\newline
+      To Claire who was here for me from the very beginning
+    \end{dedication}
+
+    \begin{dedication}
+      \begin{center}
+      And finally, to my best friend, Naïs, whose complete list of what she did for me would deserve its own book.
+      \end{center}
+    \end{dedication}
+    
     \tableofcontents
     
     \chapter*{Edito}
