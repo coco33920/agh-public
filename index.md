@@ -8,8 +8,8 @@ NB
 * AWB = A Witchy Best Friend
 
 ## Status 
-* AGH : Ongoing, last chapter published: Chapter 4 - Where no tourists have gone before! Part One. A chapter every Tuesday 1600h CET
-* AWB : Completed, last chapter: A Witchy Lover
+* AGH : Ongoing, a chapter every Tuesday 1600h CET, last chapter published: **Chapter 7 - Alone.**.
+* AWB : Completed, last chapter: A Witchy Lover.
 
 ## PDFs
 
