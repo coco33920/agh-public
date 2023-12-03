@@ -8,7 +8,7 @@ NB
 * AWB = A Witchy Best Friend
 
 ## Status 
-* AGH : Ongoing, a chapter every Tuesday 1600h CET, last chapter published: **Chapter 12 - Dilemna.**.
+* AGH : Hiatus.
 * AWB : Completed, last chapter: A Witchy Lover.
 
 ## PDFs
@@ -18,9 +18,6 @@ You can download here the up-to-date PDFs (A4-double page optimize or not) and s
 The PDFs are available on the repository [REPO](https://github.com/coco33920/agh-public/pdfs/).
 You can access them on this website with the following links
 * Main Up-To-Date with SH (EN) [PDF](pdfs/agh.pdf)
-* Main Up-To-Date with SH optimized for double page book, (EN) [PDF](pdfs/agh-a4.pdf)
-* Translated (not up to date) (FR) [PDF](pdfs/agh-french.pdf)
-* Translated (not up to date) (FR) optimized for double page book is [PDF](pdfs/agh-french-a4.pdf)
 
 
 
@@ -29,16 +26,14 @@ You can here download the up-to-date PDFs (A4-double page optimize or not) and s
 The PDFs are available on the repository [REPO](https://github.com/coco33920/agh-public/pdfs/).
 You can access them on this website with the following links
 * Completed (EN) [PDF](pdfs/awb.pdf)
-* Completed, optimized for double page book, (EN) [PDF](pdfs/awb-a4.pdf)
 
 
 ### All
 A zip file with all the pdfs and tex file is available to download [here](pdfs/all-stories.zip)
 
 ## TeX
-* AGH TeX File [TeX](pdfs/agh.tex)
-* AGH FR TeX File [TeX](pdfs/agh-french.tex)
-* AWB TeX File [TeX](pdfs/awb.tex)
+* AGH Typst File [TeX](pdfs/agh.typ)
+* AWB Typst File [TeX](pdfs/awb.typ)
 
 ## HTML
 This website primary usage is to access to the HTML version of the stories
@@ -46,7 +41,4 @@ This website primary usage is to access to the HTML version of the stories
 * AGH French HTML Version [HTML](web/agh/agh-french.html)
 * AWB HTML Version [HTML](web/awb/index.html)
 
-
-## TeX to HTML
-A full explanation of the script translating TeX to HTML for 
-public deployment is available in this page, [PAGE](tex.md)
+*last updated December 3rd, 2023*
