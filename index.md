@@ -36,7 +36,7 @@ The PDF version only is available
 ## Typst
 * AGH Typst File [Typst](pdfs/agh.typ)
 * AWB Typst File [Typst](pdfs/awb.typ)
-* SQS Typst File [Typst](pdf/sqs.typ)
+* SQS Typst File [Typst](pdfs/sqs.typ)
 
 ## HTML
 This website primary usage is to access to the HTML version of the stories
