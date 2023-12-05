@@ -6,10 +6,12 @@ SH page and here is the [AWB](https://www.scribblehub.com/series/427680/a-witchy
 NB
 * AGH = A Galactic HRT
 * AWB = A Witchy Best Friend
+* SQS = Space Queer Station
 
 ## Status 
 * AGH : Hiatus.
 * AWB : Completed, last chapter: A Witchy Lover.
+* SQS : Completed, last chapter: Part 2.
 
 ## PDFs
 
@@ -19,26 +21,25 @@ The PDFs are available on the repository [REPO](https://github.com/coco33920/agh
 You can access them on this website with the following links
 * Main Up-To-Date with SH (EN) [PDF](pdfs/agh.pdf)
 
-
-
 ### AWB
 You can here download the up-to-date PDFs (A4-double page optimize or not) and see the HTML versions
 The PDFs are available on the repository [REPO](https://github.com/coco33920/agh-public/pdfs/).
 You can access them on this website with the following links
 * Completed (EN) [PDF](pdfs/awb.pdf)
 
+### SQS
+The PDF version only is available 
+* Completed (EN) [PDF](pdf/sqs.pdf)
 
-### All
-A zip file with all the pdfs and tex file is available to download [here](pdfs/all-stories.zip)
 
-## TeX
+
+## Typst
 * AGH Typst File [TeX](pdfs/agh.typ)
 * AWB Typst File [TeX](pdfs/awb.typ)
 
 ## HTML
 This website primary usage is to access to the HTML version of the stories
 * AGH HTML Version [HTML](web/agh/index.html)
-* AGH French HTML Version [HTML](web/agh/agh-french.html)
 * AWB HTML Version [HTML](web/awb/index.html)
 
 *last updated December 3rd, 2023*
