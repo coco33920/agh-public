@@ -34,12 +34,12 @@ The PDF version only is available
 
 
 ## Typst
-* AGH Typst File [TeX](pdfs/agh.typ)
-* AWB Typst File [TeX](pdfs/awb.typ)
+* AGH Typst File [Typst](pdfs/agh.typ)
+* AWB Typst File [Typst](pdfs/awb.typ)
+* SQS Typst File [Typst](pdf/sqs.typ)
 
 ## HTML
 This website primary usage is to access to the HTML version of the stories
 * AGH HTML Version [HTML](web/agh/index.html)
-* AWB HTML Version [HTML](web/awb/index.html)
 
 *last updated December 3rd, 2023*
