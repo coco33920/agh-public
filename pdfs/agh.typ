@@ -2,6 +2,17 @@
 
 #set page(numbering: "1/1")
 
+
+#v(1fr)
+#set text(size:24pt)
+#set align(center)
+*A Galactic HRT*\
+by Charlotte O. Thomas,\
+_Last updated: December 5th, 2023_\
+#set text(size:12pt)
+#set align(left)
+#v(1fr)
+#pagebreak(weak: true)
 #set align(center)
 #quote(
   block: true,
@@ -24,6 +35,7 @@
     ]
   ]
 ]
+
 #show link: set text(rgb("#55cdfc").darken(10%))
 #set align(left)
 #let middle = block(width: 100%)[
