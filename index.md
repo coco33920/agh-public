@@ -29,7 +29,7 @@ You can access them on this website with the following links
 
 ### SQS
 The PDF version only is available 
-* Completed (EN) [PDF](pdf/sqs.pdf)
+* Completed (EN) [PDF](pdfs/sqs.pdf)
 
 
 
